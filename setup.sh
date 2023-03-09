@@ -32,7 +32,7 @@ function install-rust {
 
 function install-julia {
     log "Installing julia dependencies..."
-    sudo dnf install libatomic1 gfortran perl wget m4 cmake pkg-config curl
+    sudo dnf install -y libatomic1 gfortran perl wget m4 cmake pkg-config curl
 
     log "Downloading julia..."
     git clone https://github.com/JuliaLang/julia ~/.local/julia
