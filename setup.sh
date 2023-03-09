@@ -5,11 +5,6 @@ function log {
     echo $1
 }
 
-function init {
-    sudo dnf upgrade --refresh -y
-    sudo dnf install make cmake gcc g++ -y
-}
-
 function setup-terminal {
     log "Installing Zsh..."
     sudo dnf install zsh -y
@@ -56,7 +51,6 @@ function install-crystal {
     curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=nightly
 }
 
-init
 setup-terminal
 install-rust
 install-julia
