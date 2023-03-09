@@ -6,7 +6,7 @@ function log {
 }
 
 function init {
-    sudo dnf upgrade --refresh
+    sudo dnf upgrade --refresh -y
     sudo dnf install make cmake gcc g++
 }
 
