@@ -47,7 +47,7 @@ function install-julia {
     log "Building julia..."
     make
 
-    log "Installing binary julia at ~/.local/bin/julia"
+    log "Installing julia at ~/.local/bin/julia"
     ln -s ~/.local/julia/julia ~/.local/bin/julia
 }
 
